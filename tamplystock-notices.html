@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payments</title>
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- /Font Family -->
+    
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- /Font Awesome CDN -->
+    
+    <!-- Plugin CSS -->
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <!-- /Plugin CSS -->
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- /Custom CSS -->
+  </head>
+  <body class="bg-white overflow-x-hidden">
+    <div class="overlay"></div>
+
+    <div id="page" class="site">
+        <header class="contributor_header">
+            <div class="site-branding contributor_site_branding">
+                <div class="menu_icon">
+                    <span class="line line-1 no-animation"></span>
+                    <span class="line line-2 no-animation"></span>
+                    <span class="line line-3 no-animation"></span>
+                 </div>
+                <a href="index.html">
+                    <img class="" src="./assets/img/logo.svg" alt="logo">
+                </a>
+            </div>
+            <!-- .site-branding -->
+            <div class="contributor_user">
+                <div class="user_picture">
+                    <img src="assets/images/user.svg" alt="user picture">
+                </div>
+                <span class="user_name">UserName99</span>
+                <span style="background: #a0a0a0;" class="user_level">Super Admin</span>
+                <a href="#" class="user_logout common_hover onlyDesktop">Log me out <i class="fa-solid fa-right-from-bracket"></i></a>
+                <a href="#" class="user_logout common_hover onlyMobile" title="Log me out"><i class="fa-solid fa-right-from-bracket"></i></a>
+            </div>
+            <!-- .site-branding -->
+        </header>
+
+        <aside id="masthead" class="contributor_sidebar">
+            <nav id="site-navigation" class="main-navigation contributor_sidebar_navigation sidebar_navigation overflow-hidden">
+                <ul class="sidebar_menu">
+                    <li class="">
+                        <a href="index.html">
+                            <span></span>
+                            Dashboard 
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="payments.html">
+                            <span></span>
+                            Payments 
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="team-roles.html">
+                            <span></span>
+                            Team roles
+                        </a>
+                    </li>
+                    <li class="current-menu-item">
+                        <a href="templaystock-home-item.html">
+                            <span></span>
+                            TemplyStock
+                        </a>
+                        <ul class="sub-menu" id="templyStockMenu">
+                            <li class="">
+                                <a class="whitespace-nowrap" href="templaystock-home-item.html">Home items</a>
+                            </li>
+                            <li class="">
+                                <a class="whitespace-nowrap" href="templaystock-recommendations.html">Recommendations</a>
+                            </li>
+                            <li class="active">
+                                <a class="whitespace-nowrap" href="tamplystock-notices.html">Notices</a>
+                            </li>
+                            <li class="">
+                                <a class="whitespace-nowrap" href="templaystock-pricing.html">Pricing</a>
+                            </li>
+                            <li class="">
+                                <a class="whitespace-nowrap" href="tamplystock-user.html">Users</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="creatiya-home-item.html">
+                            <span></span>
+                            Creatiya
+                        </a>
+                        <ul class="sub-menu" id="creatiyaMenu">
+                            <li>
+                                <a class="whitespace-nowrap" href="creatiya-home-item.html">Home items</a>
+                            </li>
+                            <li>
+                                <a class="whitespace-nowrap" href="creatiya-recommendation.html">Recommendations</a>
+                            </li>
+                            <li>
+                                <a class="whitespace-nowrap" href="creatiya-notices.html">Notices</a>
+                            </li>
+                            <li>
+                                <a class="whitespace-nowrap" href="creatiya-pricing.html">Pricing</a>
+                            </li>
+                            <li>
+                                <a class="whitespace-nowrap" href="creatiya-user.html">Users</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav><!-- #site-navigation -->
+            
+        </aside><!-- #masthead -->
+
+        <main id="primary" class="site-main mt-[90px] lg:ml-[205px] 2xl:ml-[230px] 3xl:ml-[270px] md:mt-[121px] lg:mt-[110px] px-4 pt-0 py-14 lg:px-6 2xl:px-9 3xl:px-12 lg:pt-0">
+            <div class="mb-10">
+                <div class="mb-3">
+                    <div class="py-6"><h2 class="text-black text-lg font-bold">TemplyStock : Notices</h2></div>                                               
+                </div>
+                <div class="flex items-center gap-4 pb-3">
+                    <div class="text-base text-black font-semibold">User dashboard</div>
+                    <div class="on_off_switch rounded-[5px] p-1 bg-[#F0F0F0] grid grid-cols-2">
+                        <button class="active bg-transparent rounded-[3px] h-8 w-[60px] uppercase text-sm text-paragraph-gray font-semibold flex items-center justify-center">ON</button>
+                        <button class="bg-transparent rounded-[3px] h-8 w-[60px] uppercase text-sm text-paragraph-gray font-semibold flex items-center justify-center">OFF</button>
+                    </div>
+                </div>
+                <!-- Live Preview -->
+                <div class="mb-10">
+                    <div class="text-sm text-paragraph-gray mb-2">Live preview</div>
+                    <div class="grid grid-cols-[auto_1fr_auto] items-center bg-[#FAFAFA] border border-input-border" id="templyStockLivePreview">
+                        <div class="leading-[50px] px-4 text-primary-templystock font-semibold border-r border-input-border" id="liveTemplyStockTitle">Notice</div>
+                        <!-- <p class="px-6 text-black font-normal "><span class="font-semibold">Big Sale is coming!</span>  <span class="font-bold text-[#FF6100]">50% Off</span> for all of TemplyStock items on 27 October 2025</p> -->
+                        <div class="px-3 live-preview" id="user-dashboard-live-preview"></div>
+                        
+                        <div class="px-2"><a href="#" class="rounded-md bg-[#4C8CFB] text-sm text-white h-[35px] w-[100px] flex items-center justify-center p-0 duration-150" id="livePreviewButton">Ok</a></div>
+                    </div>
+                </div>
+
+                <form action="" class="notices">
+                    <div class="grid gap-5 grid-cols-2 lg:grid-cols-[120px_1fr_140px_130px] xl:grid-cols-[160px_1fr_180px_170px] pb-6">
+                        <!-- Title -->
+                        <div>
+                            <div class="text-xs leading-normal pb-2">Title</div>
+                            <div class="leading-[50px] px-4 text-primary-templystock font-semibold border border-input-border">
+                                <input class="text-primary-templystock w-full h-full" type="text" value="Notice" id="InputTemplyStockTitle">
+                            </div>
+                            <div class="border border-input-border border-t-0 px-3 py-2">
+                                <input class="border-[3px] border-black w-[14px] h-[14px] p-0" type="color" value="#FA41AA" id="templystock_title_color_picker">
+                                <label class="text-[13px] text-black" for="templystock_title_color_picker">Text Color</label>
+                            </div>
+                        </div>
+                        <!-- Description  -->
+                        <div>
+                            <div class="text-xs leading-normal pb-2">Description (Max 120 characters)</div>
+                            <div class="px-3 border border-input-border w-full leading-[50px] focus:border-input-border focus:outline-none focus:shadow-none descriptions user-dashboard">
+                                <div id="user-dashboard-editor-container"></div>
+                            </div>
+                            <div class="border border-input-border border-t-0 px-4 py-2">
+                                <div id="user-dashboard-toolbar">
+                                    <ul class="flex items-center gap-6 formateButton" >
+                                        <li>
+                                            <button class="ql-bold" type="button">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="11.85" height="12.16" viewBox="0 0 11.85 12.16"><path d="M0,11.71a2.69,2.69,0,0,0,1.05-.2,1.09,1.09,0,0,0,.53-1.07V1.72a1.07,1.07,0,0,0-.5-1A2.8,2.8,0,0,0,0,.46V0H5.56A8.17,8.17,0,0,1,8.24.37a2.57,2.57,0,0,1,2,2.53,2.17,2.17,0,0,1-.81,1.77,3.94,3.94,0,0,1-1.77.83v.17a5,5,0,0,1,1.74.65,2.79,2.79,0,0,1,1.45,2.49,2.82,2.82,0,0,1-1.38,2.43,6.57,6.57,0,0,1-3.68.92H0Zm6.7-6.8A2.62,2.62,0,0,0,7.27,3,3.75,3.75,0,0,0,6.9,1.25,1.48,1.48,0,0,0,5.46.54a1.23,1.23,0,0,0-.78.19.87.87,0,0,0-.22.68V5.46A3.3,3.3,0,0,0,6.7,4.91ZM4.6,11.2a.86.86,0,0,0,.84.38,2.09,2.09,0,0,0,1.79-.69,3.29,3.29,0,0,0,.51-2A2.66,2.66,0,0,0,6.61,6.36,4.48,4.48,0,0,0,4.46,6v4.5A1.39,1.39,0,0,0,4.6,11.2Z"/></svg>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="ql-italic" type="button"><img src="assets/img/italic.svg" alt="italic icon"></button>
+                                        </li>
+                                        <li>
+                                            <button class="ql-underline" type="button"><img src="assets/img/underline.svg" alt="underline icon"></button>
+                                        </li>
+                                        <li>
+                                            <input class="border-[3px] border-black w-[14px] h-[14px] p-0" type="color" value="#000000" name="text_color" id="user_dashboard_title_color_picker">
+                                            <span class="text-[13px] text-black" for="text_color">Text Color</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BG & Stroke -->
+                        <div>
+                            <div class="text-xs leading-normal pb-2">BG & Stroke</div>
+                            <div class="leading-[50px] px-3 font-semibold border border-input-border h-[50px] grid gap-3 items-center grid-cols-[auto_1fr]">
+                                <input type="checkbox" value="false" id="templyStockNoStroke">
+                                <label class="text-[13px] leading-normal" for="templyStockNoStroke">No Stroke</label>
+                            </div>
+                            <div class="border border-input-border border-t-0 px-3 py-2 grid grid-cols-2 gap-3">
+                                <div>
+                                    <input class="border-[3px] border-black w-[14px] h-[14px] p-0" type="color" value="#ffffff" id="templyStockBackgroundColor">
+                                    <label class="text-[13px] text-black" for="templyStockBackgroundColor">BG color</label>
+                                </div>
+                                <div>
+                                    <input class="border-[3px] border-black w-[14px] h-[14px] p-0" type="color" value="#f0f2f3" id="inputTemplyStockBorderColor">
+                                    <label class="text-[13px] text-black" for="inputTemplyStockBorderColor">Stroke</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Button text -->
+                        <div>
+                            <div class="text-xs leading-normal pb-2">Button text</div>
+                            <div class="leading-[50px] px-3 font-semibold border border-input-border h-[50px] grid gap-3 items-center ">
+                                <input class="w-full h-full" type="text" name="inputTemlyStokeButtonText" placeholder="OK" value="OK" id="inputTemlyStokeButtonText">
+                            </div>
+                            <div class="border border-input-border border-t-0 px-3 py-2 grid grid-cols-2 gap-3">
+                                <div>
+                                    <input class="border-[3px] border-black w-[14px] h-[14px] p-0" type="color" value="#4C8CFB" id="inputTemplyStokeButtonBgColorPicker">
+                                    <label class="text-[13px] text-black" for="inputTemplyStokeButtonBgColorPicker">Button</label>
+                                </div>
+                                <div>
+                                    <input class="border-[3px] border-black w-[14px] h-[14px] p-0" type="color" value="#ffffff" id="inputTemplyStokeButtonTextColorPicker">
+                                    <label class="text-[13px] text-black" for="inputTemplyStokeButtonTextColorPicker">Text</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-6 items-center">
+                        <div class="flex gap-3">
+                            <input type="checkbox" id="buttonLink">
+                            <label class="text-sm" for=""><b>Button link</b> (Optional- Open in a new Tab)</label>
+                        </div>
+                        <div class="grid gap-3 grid-cols-[1fr_auto] flex-1">
+                            <input class="w-full border border-input-border rounded-md px-3 leading-tight" type="url" placeholder="https://loremexample.com/" name="button_link_url" id="button_link_url">
+                            <button type="submit" class="apply border border-vmc-primary rounded-md py-2 px-4 text-vmc-primary">Apply</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            <!-- Top Navigation Start -->
+            <div class="mb-10 pt-10 border-t border-input-border">
+                <div class="flex items-center gap-4 pb-3">
+                    <div class="text-base text-black font-semibold">Top navigation</div>
+                    <div class="top_navigation_on_off_switch rounded-[5px] p-1 bg-[#F0F0F0] grid grid-cols-2">
+                        <button class="bg-transparent rounded-[3px] h-8 w-[60px] uppercase text-sm text-paragraph-gray font-semibold flex items-center justify-center">ON</button>
+                        <button class="active bg-transparent rounded-[3px] h-8 w-[60px] uppercase text-sm text-paragraph-gray font-semibold flex items-center justify-center">OFF</button>
+                    </div>
+                </div>
+                <!-- Live Preview -->
+                <div class="mb-10">
+                    <div class="text-sm text-paragraph-gray mb-2">Live preview</div>
+                    <div class="grid grid-cols-[auto_1fr_auto] items-center bg-[#FADC64] border border-input-border" id="topNavigationLivePreview">
+                        <div class="leading-[50px] px-4 text-vmc-primary font-semibold border-r border-input-border" id="liveTopNavigationTitle">Notice</div>
+                        <!-- <p class="px-6 text-black font-normal "><span class="font-semibold">Big Sale is coming!</span>  <span class="font-bold text-[#FF6100]">50% Off</span> for all of TemplyStock items on 27 October 2025</p> -->
+                        <div class="px-3 live-preview" id="top-navigation-live-preview"></div>
+                        
+                        <div class="px-2"><a href="#" class="rounded-md bg-[#4C8CFB] text-sm text-white h-[35px] w-[100px] flex items-center justify-center p-0 duration-150" id="TopNavigationLivePreviewButton">Ok</a></div>
+                    </div>
+                </div>
+
+                <form action="" class="notices">
+                    <div class="grid gap-5 grid-cols-2 lg:grid-cols-[120px_1fr_140px_130px] xl:grid-cols-[160px_1fr_180px_170px] pb-6">
+                        <!-- Title -->
+                        <div>
+                            <div class="text-xs leading-normal pb-2">Title</div>
+                            <div class="leading-[50px] px-4 text-primary-templystock font-semibold border border-input-border">
+                                <input class="text-primary-templystock w-full h-full" type="text" value="Notice" id="InputTopNavigationTitle">
+                            </div>
+                            <div class="border border-input-border border-t-0 px-3 py-2">
+                                <input class="border-[3px] border-black w-[14px] h-[14px] p-0" type="color" value="#4C8CFB" id="topNavigation_title_color_picker">
+                                <label class="text-[13px] text-black" for="topNavigation_title_color_picker">Text Color</label>
+                            </div>
+                        </div>
+                        <!-- Description  -->
+                        <div>
+                            <div class="text-xs leading-normal pb-2">Description (Max 120 characters)</div>
+                            <div class="px-3 py-2 border border-input-border w-full h-[50px] focus:border-input-border focus:outline-none focus:shadow-none">
+                                <div id="top-navigation-editor-container"></div>
+                            </div>
+                            <div class="border border-input-border border-t-0 px-4 py-2">
+                                <div id="top-navigation-toolbar">
+                                    <ul class="flex items-center gap-6 formateButton" >
+                                        <li>
+                                            <button class="ql-bold" type="button">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="11.85" height="12.16" viewBox="0 0 11.85 12.16"><path d="M0,11.71a2.69,2.69,0,0,0,1.05-.2,1.09,1.09,0,0,0,.53-1.07V1.72a1.07,1.07,0,0,0-.5-1A2.8,2.8,0,0,0,0,.46V0H5.56A8.17,8.17,0,0,1,8.24.37a2.57,2.57,0,0,1,2,2.53,2.17,2.17,0,0,1-.81,1.77,3.94,3.94,0,0,1-1.77.83v.17a5,5,0,0,1,1.74.65,2.79,2.79,0,0,1,1.45,2.49,2.82,2.82,0,0,1-1.38,2.43,6.57,6.57,0,0,1-3.68.92H0Zm6.7-6.8A2.62,2.62,0,0,0,7.27,3,3.75,3.75,0,0,0,6.9,1.25,1.48,1.48,0,0,0,5.46.54a1.23,1.23,0,0,0-.78.19.87.87,0,0,0-.22.68V5.46A3.3,3.3,0,0,0,6.7,4.91ZM4.6,11.2a.86.86,0,0,0,.84.38,2.09,2.09,0,0,0,1.79-.69,3.29,3.29,0,0,0,.51-2A2.66,2.66,0,0,0,6.61,6.36,4.48,4.48,0,0,0,4.46,6v4.5A1.39,1.39,0,0,0,4.6,11.2Z"/></svg>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="ql-italic" type="button"><img src="assets/img/italic.svg" alt="italic icon"></button>
+                                        </li>
+                                        <li>
+                                            <button class="ql-underline" type="button"><img src="assets/img/underline.svg" alt="underline icon"></button>
+                                        </li>
+                                        <li>
+                                            <input class="border-[3px] border-black w-[14px] h-[14px] p-0" type="color" value="#000000" name="text_color" id="top_navigation_title_color_picker">
+                                            <span class="text-[13px] text-black" for="text_color">Text Color</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BG & Stroke -->
+                        <div>
+                            <div class="text-xs leading-normal pb-2">BG & Stroke</div>
+                            <div class="leading-[50px] px-3 font-semibold border border-input-border h-[50px] grid gap-3 items-center grid-cols-[auto_1fr]">
+                                <input type="checkbox" value="false" id="topNavigationNoStroke" checked>
+                                <label class="text-[13px] leading-normal" for="topNavigationNoStroke">No Stroke</label>
+                            </div>
+                            <div class="border border-input-border border-t-0 px-3 py-2 grid grid-cols-2 gap-3">
+                                <div>
+                                    <input class="border-[3px] border-black w-[14px] h-[14px] p-0" type="color" value="#FADC64" id="topNavigationBackgroundColor">
+                                    <label class="text-[13px] text-black" for="topNavigationBackgroundColor">BG color</label>
+                                </div>
+                                <div>
+                                    <input class="border-[3px] border-black w-[14px] h-[14px] p-0" type="color" value="#f0f2f3" id="inputTopNavigationBorderColor">
+                                    <label class="text-[13px] text-black" for="inputTopNavigationBorderColor">Stroke</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Button text -->
+                        <div>
+                            <div class="text-xs leading-normal pb-2">Button text</div>
+                            <div class="leading-[50px] px-3 font-semibold border border-input-border h-[50px] grid gap-3 items-center ">
+                                <input class="w-full h-full" type="text" name="inputTopNavigationButtonText" placeholder="OK" value="OK" id="inputTopNavigationButtonText">
+                            </div>
+                            <div class="border border-input-border border-t-0 px-3 py-2 grid grid-cols-2 gap-3">
+                                <div>
+                                    <input class="border-[3px] border-black w-[14px] h-[14px] p-0" type="color" value="#4C8CFB" id="inputTopNavigationButtonBgColorPicker">
+                                    <label class="text-[13px] text-black" for="inputTopNavigationButtonBgColorPicker">Button</label>
+                                </div>
+                                <div>
+                                    <input class="border-[3px] border-black w-[14px] h-[14px] p-0" type="color" value="#ffffff" id="inputTopNavigationButtonTextColorPicker">
+                                    <label class="text-[13px] text-black" for="inputTopNavigationButtonTextColorPicker">Text</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-6 items-center">
+                        <div class="flex gap-3">
+                            <input type="checkbox" id="topNavigationButtonLink">
+                            <label class="text-sm" for=""><b>Button link</b> (Optional- Open in a new Tab)</label>
+                        </div>
+                        <div class="grid gap-3 grid-cols-[1fr_auto] flex-1">
+                            <input class="w-full border border-input-border rounded-md px-3 leading-tight" type="url" placeholder="https://loremexample.com/" name="top_navigation_button_link_url" id="top_navigation_button_link_url">
+                            <button type="submit" class="apply border border-vmc-primary rounded-md py-2 px-4 text-vmc-primary">Apply</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- Top Navigation End -->
+            <div class="p-1o"></div>
+        </main><!-- #main -->
+    </div><!-- #Page -->
+</div><!-- #page -->
+
+<!-- Scripts  -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<script src="assets/js/common.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/notices.js"></script>
+<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+
+<script>
+const userDashboard = new Quill('#user-dashboard-editor-container', {
+    modules: {
+      toolbar: '#user-dashboard-toolbar',
+      keyboard: {
+        bindings: {
+          enter: {
+            key: 'Enter',
+            handler: function() {
+              return false; // Prevent Enter key from doing anything
+            }
+          }
+        }
+      },
+    },
+    
+    placeholder: 'Write description ...', 
+    maxLength: 120,
+  });
+
+  // Character limit implementation
+  userDashboard.on('text-change', function(delta, oldDelta, source) {
+    var text = userDashboard.getText();
+    if (text.length > 120) {
+      userDashboard.deleteText(120, text.length - 120);
+    }
+  });
+
+    // Update live preview
+    let userDashboardLivePreview = document.getElementById('user-dashboard-live-preview');
+    userDashboard.on('text-change', function() {
+        userDashboardLivePreview.innerHTML = userDashboard.root.innerHTML;
+    });
+
+    // Handle custom color picker button click
+    userDashboard.getModule('toolbar').addHandler('color-picker', function(e) {
+    console.log(e);
+    document.getElementById('user_dashboard_title_color_picker').click();
+    });
+
+  // Handle color selection
+  document.getElementById('user_dashboard_title_color_picker').addEventListener('input', function(event) {
+    var color = event.target.value;
+    var range = userDashboard.getSelection();
+    if (range) {
+      userDashboard.format('color', color);
+    }
+  });
+
+
+    // ====================
+
+
+
+
+const topNavigation = new Quill('#top-navigation-editor-container', {
+    modules: {
+      toolbar: '#top-navigation-toolbar',
+      keyboard: {
+        bindings: {
+          enter: {
+            key: 'Enter',
+            handler: function() {
+              return false; // Prevent Enter key from doing anything
+            }
+          }
+        }
+      },
+    },
+    
+    placeholder: 'Write description ...', 
+    maxLength: 120,
+  });
+
+  // Character limit implementation
+  topNavigation.on('text-change', function(delta, oldDelta, source) {
+    var text = topNavigation.getText();
+    if (text.length > 120) {
+        topNavigation.deleteText(120, text.length - 120);
+    }
+  });
+
+    // Update live preview
+    let topNavigationLivePreview = document.getElementById('top-navigation-live-preview');
+    topNavigation.on('text-change', function() {
+        topNavigationLivePreview.innerHTML = topNavigation.root.innerHTML;
+    });
+
+    // Handle custom color picker button click
+    topNavigation.getModule('toolbar').addHandler('color-picker', function(e) {
+    console.log(e);
+    document.getElementById('top_navigation_title_color_picker').click();
+    });
+
+  // Handle color selection
+  document.getElementById('top_navigation_title_color_picker').addEventListener('input', function(event) {
+    var color = event.target.value;
+    var range = topNavigation.getSelection();
+    if (range) {
+        topNavigation.format('color', color);
+    }
+  });
+
+
+  
+</script>
+<!-- /Scripts  -->
+</body>
+</html>

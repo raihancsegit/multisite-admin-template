@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payments</title>
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- /Font Family -->
+    
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- /Font Awesome CDN -->
+    
+    <!-- Plugin CSS -->
+    <!-- /Plugin CSS -->
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .active-item a{
+            background: transparent !important;
+            color: black !important;
+        }
+
+        .page-pagination.creatiya .current {
+            color: #2D78FA;
+            border: 1px solid #2D78FA;
+        }
+    </style>
+    <!-- /Custom CSS -->
+  </head>
+  <body class="bg-white overflow-x-hidden">
+    <div class="overlay"></div>
+
+    <div id="page" class="site">
+        <header class="contributor_header">
+            <div class="site-branding contributor_site_branding">
+                <div class="menu_icon">
+                    <span class="line line-1 no-animation"></span>
+                    <span class="line line-2 no-animation"></span>
+                    <span class="line line-3 no-animation"></span>
+                 </div>
+                <a href="index.html">
+                    <img class="" src="./assets/img/logo.svg" alt="logo">
+                </a>
+            </div>
+            <!-- .site-branding -->
+            <div class="contributor_user">
+                <div class="user_picture">
+                    <img src="assets/images/user.svg" alt="user picture">
+                </div>
+                <span class="user_name">UserName99</span>
+                <span style="background: #a0a0a0;" class="user_level">Super Admin</span>
+                <a href="#" class="user_logout common_hover onlyDesktop">Log me out <i class="fa-solid fa-right-from-bracket"></i></a>
+                <a href="#" class="user_logout common_hover onlyMobile" title="Log me out"><i class="fa-solid fa-right-from-bracket"></i></a>
+            </div>
+            <!-- .site-branding -->
+        </header>
+
+        <aside id="masthead" class="contributor_sidebar">
+            <nav id="site-navigation" class="main-navigation contributor_sidebar_navigation sidebar_navigation overflow-hidden">
+                <ul class="sidebar_menu">
+                    <li class="">
+                        <a href="index.html">
+                            <span></span>
+                            Dashboard 
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="payments.html">
+                            <span></span>
+                            Payments 
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="team-roles.html">
+                            <span></span>
+                            Team roles
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="templaystock-home-item.html">
+                            <span></span>
+                            TemplyStock
+                        </a>
+                        <ul class="sub-menu" id="templyStockMenu">
+                            <li class="">
+                                <a class="whitespace-nowrap" href="templaystock-home-item.html">Home items</a>
+                            </li>
+                            <li class="">
+                                <a class="whitespace-nowrap" href="templaystock-recommendations.html">Recommendations</a>
+                            </li>
+                            <li class="">
+                                <a class="whitespace-nowrap" href="tamplystock-notices.html">Notices</a>
+                            </li>
+                            <li class="">
+                                <a class="whitespace-nowrap" href="templaystock-pricing.html">Pricing</a>
+                            </li>
+                            <li class="">
+                                <a class="whitespace-nowrap" href="tamplystock-user.html">Users</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="current-menu-item">
+                        <a href="creatiya-home-item.html">
+                            <span></span>
+                            Creatiya
+                        </a>
+                        <ul class="sub-menu" id="creatiyaMenu">
+                            <li class="">
+                                <a class="whitespace-nowrap" href="creatiya-home-item.html">Home items</a>
+                            </li>
+                            <li class="">
+                                <a class="whitespace-nowrap" href="creatiya-recommendation.html">Recommendations</a>
+                            </li>
+                            <li class="">
+                                <a class="whitespace-nowrap" href="creatiya-notices.html">Notices</a>
+                            </li>
+                            <li class="">
+                                <a class="whitespace-nowrap" href="creatiya-pricing.html">Pricing</a>
+                            </li>
+                            <li class="active">
+                                <a class="whitespace-nowrap" href="creatiya-user.html">Users</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav><!-- #site-navigation -->
+            
+        </aside><!-- #masthead -->
+
+        <main id="primary" class="site-main mt-[90px] lg:ml-[205px] 2xl:ml-[230px] 3xl:ml-[270px] md:mt-[121px] lg:mt-[110px] px-4 pt-0 py-14 lg:px-6 2xl:px-9 3xl:px-12 lg:pt-0">
+            <div class="mb-10">
+                <div class="mb-3">
+                    <div class="py-6"><h2 class="text-black text-lg font-bold">Creatiya : Users</h2></div>
+                    <div class="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-6">
+                        <div class="pb-2">
+                            <h2 class="text-black text-base font-semibold">3607 Users</h2>
+                            <p class="text-[14px]">Active plan users: <span class="font-semibold">206</span></p>
+                        </div>
+                        <div>
+                            <form action="" class="border border-border grid grid-cols-[1fr_55px]">
+                                <input class="bg-transparent border-none w-full px-4 py-2 text-black text-sm" type="text" placeholder="Search ( e.g. username, email)">
+                                <button type="submit" class="h-[45px] flex items-center justify-center text-white bg-vmc-primary text-sm border-l border-vmc-primary">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="top_filter flex items-center justify-between gap-30 flex-wrap mt-3">
+                        <div>
+                            <ul class="flex items-center gap-3 text-gray-78 text-sm">
+                                <li class="each-item-left active-item"><a class="duration-150" href="#">All</a></li>
+                                <li class="each-item-left"><a class="duration-150 whitespace-nowrap" href="#">Level 0 (Primary)</a></li>
+                                <li class="each-item-left"><a class="duration-150 whitespace-nowrap" href="#">Level 1</a></li>
+                                <li class="each-item-left"><a class="duration-150 whitespace-nowrap" href="#">Level 2</a></li>
+                                <li class="each-item-left"><a class="duration-150 whitespace-nowrap" href="#">Level 3</a></li>
+                                <li class="each-item-left"><a class="duration-150 whitespace-nowrap" href="#">Level 4</a></li>
+                                <li class="each-item-left"><a class="duration-150 whitespace-nowrap" href="#">Level 5</a></li>
+                                <li class="each-item-left"><a class="duration-150 whitespace-nowrap" href="#">Level 6</a></li>
+                                <li class="each-item-left"><a class="duration-150 whitespace-nowrap" href="#">Level 7</a></li>
+                                <li class="each-item-left"><a class="duration-150 whitespace-nowrap" href="#">Level 8</a></li>
+                            </ul>                        
+                        </div>
+                        <div>
+                            <ul class="flex items-center gap-3">
+                                <li class="each-item-right active-item"><a class="duration-150 rounded-[50px] py-[10px] px-4 flex items-center justify-center leading-none text-gray-78" href="#">Latest</a></li>
+                                <li class="each-item-right"><a class="duration-150 rounded-[50px] py-[10px] px-4 flex items-center justify-center leading-none text-gray-78" href="#">Level 8-0</a></li>
+                                <li class="each-item-right"><a class="duration-150 rounded-[50px] py-[10px] px-4 flex items-center justify-center leading-none text-gray-78" href="#">Plan 4-1</a></li>
+                            </ul>
+                        </div>
+                    </div>                                                 
+                </div>
+                
+                <div class="border border-input-border">
+                    <div class="p-3 pt-0 lg:px-6 overflow-x-scroll md:overflow-auto">
+                        <table class="w-full sm:bg-white overflow-hidden text-sm">
+                            <thead class="text-paragraph-gray text-sm font-normal">
+                                <tr class="">
+                                    <th class="py-3 pr-2 text-left text-sm font-normal leading-tight h-12 border-b border-input-border truncate">Sl.</th>
+                                    <th class="py-3 pr-2 text-left text-sm font-normal leading-tight h-12 border-b border-input-border truncate">Username</th>
+                                    <th class="py-3 pr-2 text-left text-sm font-normal leading-tight h-12 border-b border-input-border truncate">User since</th>
+                                    <th class="py-3 pr-2 text-left text-sm font-normal leading-tight h-12 border-b border-input-border truncate">Email</th>
+                                    <th class="py-3 pr-2 text-left text-sm font-normal leading-tight h-12 border-b border-input-border truncate">Country</th>
+                                    <th class="py-3 pr-2 text-left text-sm font-semibold leading-tight h-12 border-b border-input-border truncate text-[#4BBE37]">Active plan</th>
+                                    <th class="py-3 pr-2 text-left text-sm font-normal leading-tight h-12 border-b border-input-border truncate">Level</th>
+                                    <th class="py-3 pr-2 text-left text-sm font-normal leading-tight h-12 border-b border-input-border truncate">Account status</th>
+                                    <th class="py-3 pr-2 text-left text-sm font-normal leading-tight h-12 border-b border-input-border truncate">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-sm text-black">
+                                <tr class="">  <!-- get disabled design to set class "status-disabled" into the tr tag  -->
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2">1</td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate"><a class="text-vmc-primary underline font-semibold" href="#">UserName99</a></td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2">Today</td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate">exampleemail2@domain.com</td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate">USA</td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate font-semibold">Presentation <span class="text-gray-78 font-normal">/ 1 User</span></td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate">0</td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate status">
+                                        <span class="check text-[#4BBE37]"><i class="fa-solid fa-check"></i></span>
+                                        <span class="xmark text-[#E68C00] inline-flex items-center gap-4"><i class="fa-solid fa-check"></i> Disabled</span>
+                                    </td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate actions">
+                                        <span class="text-[#E68C00] underline cursor-pointer enable_disabled_text">Disabled</span>
+                                        <span class="text-[#EB4146] underline cursor-pointer ml-3">Delete</span>
+                                    </td>
+                                </tr>
+                                <tr class=""> <!-- get disabled design to set class "status-disabled" into the tr tag  -->
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2">2</td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate"><a class="text-vmc-primary underline font-semibold" href="#">St0904</a></td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2">Today</td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate">exampleemail2@domain.com</td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate">UAE</td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate font-semibold">Print&Social <span class="text-gray-78 font-normal">/ 3 User</span></td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate">0</td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate status">
+                                        <span class="check text-[#4BBE37]"><i class="fa-solid fa-check"></i></span>
+                                        <span class="xmark text-[#E68C00] inline-flex items-center gap-4"><i class="fa-solid fa-check"></i> Disabled</span>
+                                    </td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate actions">
+                                        <span class="text-[#E68C00] underline cursor-pointer enable_disabled_text">Disabled</span>
+                                        <span class="text-[#EB4146] underline cursor-pointer ml-3">Delete</span>
+                                    </td>
+                                </tr>
+                                <tr class=""> <!-- get disabled design to set class "status-disabled" into the tr tag  -->
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2">3</td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate"><a class="text-vmc-primary underline font-semibold" href="#">Siki_049</a></td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2">July 10, 2021</td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate">lorem@example.com</td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate">IN</td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate text-gray-78">-</td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate">1</td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate status">
+                                        <span class="check text-[#4BBE37]"><i class="fa-solid fa-check"></i></span>
+                                        <span class="xmark text-[#E68C00] inline-flex items-center gap-4"><i class="fa-solid fa-check"></i> Disabled</span>
+                                    </td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate actions">
+                                        <span class="text-[#E68C00] underline cursor-pointer enable_disabled_text">Disabled</span>
+                                        <span class="text-[#EB4146] underline cursor-pointer ml-3">Delete</span>
+                                    </td>
+                                </tr>
+                                <tr class="status-disabled"> <!-- get disabled design to set class "status-disabled" into the tr tag  -->
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2">4</td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate"><a class="text-vmc-primary underline font-semibold" href="#">UserName99</a></td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2">June 11, 2021</td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate">exampleemail2@domain.com</td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate">USA</td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate text-gray-78">-</td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate">2</td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate status">
+                                        <span class="check text-[#4BBE37]"><i class="fa-solid fa-check"></i></span>
+                                        <span class="xmark text-[#E68C00] inline-flex items-center gap-4"><i class="fa-solid fa-xmark"></i> Disabled</span>
+                                    </td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate actions">
+                                        <span class="text-[#E68C00] underline cursor-pointer enable_disabled_text">Disabled</span>
+                                        <span class="text-[#EB4146] underline cursor-pointer ml-3">Delete</span>
+                                    </td>
+                                </tr>
+                                <tr class=""> <!-- get disabled design to set class "status-disabled" into the tr tag  -->
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2">5</td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate"><a class="text-vmc-primary underline font-semibold" href="#">St0904</a></td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2">June 11, 2021</td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate">lorem@example.com</td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate">UAE</td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate font-semibold">Presentation <span class="text-gray-78 font-normal">/ 2 Users</span></td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate">3</td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate status">
+                                        <span class="check text-[#4BBE37]"><i class="fa-solid fa-check"></i></span>
+                                        <span class="xmark text-[#E68C00] inline-flex items-center gap-4"><i class="fa-solid fa-xmark"></i> Disabled</span>
+                                    </td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate actions">
+                                        <span class="text-[#E68C00] underline cursor-pointer enable_disabled_text">Disabled</span>
+                                        <span class="text-[#EB4146] underline cursor-pointer ml-3">Delete</span>
+                                    </td>
+                                </tr>
+                                <tr class=""> <!-- get disabled design to set class "status-disabled" into the tr tag  -->
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2">6</td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate"><a class="text-vmc-primary underline font-semibold" href="#">Siki_049</a></td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2">June 10, 2021</td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate">lorem@example.com</td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate">IN</td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate font-semibold">ExclusivePro <span class="text-gray-78 font-normal">/ 3 Users</span></td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate">0</td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate status">
+                                        <span class="check text-[#4BBE37]"><i class="fa-solid fa-check"></i></span>
+                                        <span class="xmark text-[#E68C00] inline-flex items-center gap-4"><i class="fa-solid fa-xmark"></i> Disabled</span>
+                                    </td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate actions">
+                                        <span class="text-[#E68C00] underline cursor-pointer enable_disabled_text">Disabled</span>
+                                        <span class="text-[#EB4146] underline cursor-pointer ml-3">Delete</span>
+                                    </td>
+                                </tr>
+                                <tr class=""> <!-- get disabled design to set class "status-disabled" into the tr tag  -->
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2">7</td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate"><a class="text-vmc-primary underline font-semibold" href="#">UserName99</a></td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2">June 10, 2021</td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate">exampleemail2@domain.com</td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate">USA</td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate font-semibold">Presentation <span class="text-gray-78 font-normal">/ 2 Users</span></td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate">0</td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate status">
+                                        <span class="check text-[#4BBE37]"><i class="fa-solid fa-check"></i></span>
+                                        <span class="xmark text-[#E68C00] inline-flex items-center gap-4"><i class="fa-solid fa-check"></i> Disabled</span>
+                                    </td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate actions">
+                                        <span class="text-[#E68C00] underline cursor-pointer enable_disabled_text">Disabled</span>
+                                        <span class="text-[#EB4146] underline cursor-pointer ml-3">Delete</span>
+                                    </td>
+                                </tr>
+                                <tr class=""> <!-- get disabled design to set class "status-disabled" into the tr tag  -->
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2">8</td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate"><a class="text-vmc-primary underline font-semibold" href="#">St0904</a></td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2">June 9, 2021</td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate">exampleemail2@domain.com</td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate">UAE</td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate font-semibold">Exclusive <span class="text-gray-78 font-normal">/ 1 User</span></td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate">0</td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate status">
+                                        <span class="check text-[#4BBE37]"><i class="fa-solid fa-check"></i></span>
+                                        <span class="xmark text-[#E68C00] inline-flex items-center gap-4"><i class="fa-solid fa-check"></i> Disabled</span>
+                                    </td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate actions">
+                                        <span class="text-[#E68C00] underline cursor-pointer enable_disabled_text">Disabled</span>
+                                        <span class="text-[#EB4146] underline cursor-pointer ml-3">Delete</span>
+                                    </td>
+                                </tr>
+                                <tr class="status-disabled"> <!-- get disabled design to set class "status-disabled" into the tr tag  -->
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2">9</td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate"><a class="text-vmc-primary underline font-semibold" href="#">Siki_049</a></td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2">June 6, 2021</td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate">lorem@example.com</td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate">IN</td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate">-</td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate">1</td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate status">
+                                        <span class="check text-[#4BBE37]"><i class="fa-solid fa-check"></i></span>
+                                        <span class="xmark text-[#E68C00] inline-flex items-center gap-4"><i class="fa-solid fa-xmark"></i> Disabled</span>
+                                    </td>
+                                    <td class="border-b border-input-border leading-tight h-12 py-3 pr-2 truncate actions">
+                                        <span class="text-[#E68C00] underline cursor-pointer enable_disabled_text">Disabled</span>
+                                        <span class="text-[#EB4146] underline cursor-pointer ml-3">Delete</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="my-8">
+                    <nav aria-label="page" class="page-pagination creatiya">
+                        <div class="flex items-center gap-6">
+                            <a href="#" class="page-numbers text-xs text-black duration-150 w-[35px] h-[30px] rounded-sm border-transparent flex items-center justify-center hover:text-vmc-primary nav-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                            <a href="#" class="page-numbers text-sm text-black duration-150 w-[35px] h-[30px] rounded-sm border-transparent flex items-center justify-center hover:text-vmc-primary current"aria-current="page">1</a>
+                            <a href="#" class="page-numbers text-sm text-black duration-150 w-[35px] h-[30px] rounded-sm border-transparent flex items-center justify-center hover:text-vmc-primary">2</a>
+                            <a href="#" class="page-numbers text-sm text-black duration-150 w-[35px] h-[30px] rounded-sm border-transparent flex items-center justify-center hover:text-vmc-primary">3</a>
+                            <a href="#" class="page-numbers text-sm text-black duration-150 w-[35px] h-[30px] rounded-sm border-transparent flex items-center justify-center hover:text-vmc-primary">4</a>
+                            <a href="#" class="page-numbers text-xs text-black duration-150 w-[35px] h-[30px] rounded-sm border-transparent flex items-center justify-center hover:text-vmc-primary nav-next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                        </div>
+                    </nav>
+                </div>
+
+                <div class="border border-input-border py-6 px-8">
+                    <div class="flex flex-wrap gap-10 items-center">
+                        <div>
+                            <div class="text-black text-sm font-semibold">Download as CSV</div>
+                            <div class="text-paragraph-gray text-sm font-normal">(Max 10K each CSV file)</div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <label for="from" class="whitespace-nowrap text-black text-sm ">From</label>
+                            <input class="border border-input-border rounded-md p-3 w-[184px]" type="text" placeholder="(e.g 1)" name="from" id="from">
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <label for="up_to" class="whitespace-nowrap text-black text-sm ">Up to</label>
+                            <input class="border border-input-border rounded-md p-3 w-[184px]" type="text" placeholder="(e.g. 10000)" name="up_to" id="up_to">
+                        </div>
+                        <div class="grid gap-2 grid-cols-1 sm:items-center w-[184px]">
+                            <div class="custom_form_control relative border border-border rounded-md">
+                                <p class="csv_file_placeholder py-4 px-3 text-sm text-black leading-none flex justify-between gap-2 items-center cursor-pointer"><span>All</span> <i class="fa-solid fa-chevron-down text-[10px]"></i></p>
+                                <input type="hidden" name="csv_file" value="" id="csv_file">
+                                <div class="customFiledPopup bg-white border border-border shadow-soft-shadow absolute z-10 w-[calc(100%_+_2px)] -top-[1px] -left-[1px] hidden mb-12">
+                                    <ul class="csv_file bg-white grid grid-cols-1 gap-y-2 gap-x-8 p-4 ">
+                                        <li>
+                                            <span class="block text-black text-sm leading-7 uppercase px-2 rounded-md cursor-pointer hover:bg-vmc-primary hover:text-white">All</span>
+                                        </li>
+                                        <li>
+                                            <span class="block text-black text-sm leading-7 uppercase px-2 rounded-md cursor-pointer hover:bg-vmc-primary hover:text-white">Level 0 (Primary)</span>
+                                        </li>
+                                        <li>
+                                            <span class="block text-black text-sm leading-7 uppercase px-2 rounded-md cursor-pointer hover:bg-vmc-primary hover:text-white">Level 1</span>
+                                        </li>
+                                        <li>
+                                            <span class="block text-black text-sm leading-7 uppercase px-2 rounded-md cursor-pointer hover:bg-vmc-primary hover:text-white">Level 2</span>
+                                        </li>
+                                        <li>
+                                            <span class="block text-black text-sm leading-7 uppercase px-2 rounded-md cursor-pointer hover:bg-vmc-primary hover:text-white">Level 3</span>
+                                        </li>
+                                        <li>
+                                            <span class="block text-black text-sm leading-7 uppercase px-2 rounded-md cursor-pointer hover:bg-vmc-primary hover:text-white">Level 4</span>
+                                        </li>
+                                        <li>
+                                            <span class="block text-black text-sm leading-7 uppercase px-2 rounded-md cursor-pointer hover:bg-vmc-primary hover:text-white">Level 5</span>
+                                        </li>
+                                        <li>
+                                            <span class="block text-black text-sm leading-7 uppercase px-2 rounded-md cursor-pointer hover:bg-vmc-primary hover:text-white">Level 6</span>
+                                        </li>
+                                        <li>
+                                            <span class="block text-black text-sm leading-7 uppercase px-2 rounded-md cursor-pointer hover:bg-vmc-primary hover:text-white">Level 7</span>
+                                        </li>
+                                        <li>
+                                            <span class="block text-black text-sm leading-7 uppercase px-2 rounded-md cursor-pointer hover:bg-vmc-primary hover:text-white">Level 8</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="common-button">Download</button>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </main><!-- #main -->
+    </div><!-- #Page -->
+</div><!-- #page -->
+
+<!-- Scripts  -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<script src="assets/js/common.js"></script>
+<script src="assets/js/script.js"></script>
+<!-- /Scripts  -->
+</body>
+</html>
